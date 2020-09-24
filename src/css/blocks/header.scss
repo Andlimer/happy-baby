@@ -1,0 +1,32 @@
+.header {
+  padding: 20px 0;
+  background-color: #9BEDFF;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: 50px;
+}
+
+.header__phone {
+  color: $main-text;
+  transition: color .4s;
+
+  &:hover {
+    color: $main-color;
+
+    .phone__icon {
+      fill: $main-color;
+    }
+  }
+}

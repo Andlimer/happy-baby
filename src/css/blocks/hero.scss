@@ -1,0 +1,48 @@
+.hero {
+  // padding: 40px 0;
+  padding-bottom: 20px;
+  background-color: #9BEDFF;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  width: 470px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero__list {
+  margin-bottom: 40px;
+}
+
+.hero__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// .hero__social {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   color: $main-text;
+//   transition: color .4s;
+
+//   &:hover {
+//     color: $main-color;
+
+//     .social__icon {
+//       fill: $main-color;
+//     }
+//   }
+// }

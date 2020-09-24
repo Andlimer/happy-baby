@@ -1,0 +1,77 @@
+.step {
+  display: flex;
+  align-items: center;
+}
+
+.step__icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+
+  &_green {
+    background-color: #C3FFCD;
+  }
+
+  &_yellow {
+    background-color: #FFF1CE;
+  }
+
+  &_bluefish {
+    background-color: #A9FFF0;
+  }
+
+  &_blue {
+    background-color: #A6BFFF;
+  }
+
+  &_pink {
+    background-color: #FFCAF3;
+  }
+
+  &_red {
+    background-color: #FFC9C9;
+  }
+}
+
+.step__icon {
+  width: 70px;
+  height: 70px;
+
+  &_green {
+    fill: #347C40;
+  }
+
+  &_yellow {
+    fill: #967F43;
+  }
+
+  &_bluefish {
+    fill: #337E70;
+  }
+
+  &_blue {
+    fill: #3C579B;
+  }
+
+  &_pink {
+    fill: #A75193;
+  }
+
+  &_red {
+    fill: #B93737;
+  }
+}
+
+.step__desc {
+  flex: 1;
+}
+
+.step__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+}

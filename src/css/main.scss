@@ -1,0 +1,8 @@
+$main-color: #FE37AE;
+$sec-text: #FFFFFF;
+$main-text: #2F2F2F;
+
+@import './layout/media.scss';
+@import './layout/interface.scss';
+
+@import './blocks/*.scss';

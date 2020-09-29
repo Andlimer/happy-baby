@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Счастливый малыш</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +24,7 @@
               <nav class="header__nav nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Каталог</a>
+                    <a href="#" data-section="catalog" class="nav__link">Каталог</a>
                   </li>
                   <li class="nav__item">
                     <a href="#" class="nav__link">Доставка</a>
@@ -68,7 +68,7 @@
           </div>
         </section>
 
-        <section class="offer">
+        <section class="offer section">
           <div class="container">
             <h2 class="offer__title title">Почему выбирают нашу продукцию</h2>
             <ul class="offer__list">
@@ -139,6 +139,79 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section class="works section" id="catalog">
+          <div class="container works__container">
+            <h2 class="works__title title">Наш каталог</h2>
+
+            <div class="works__slider">
+              <button class="slider-arrow slider-arrow__prev">
+                <svg class="slider-arrow__icon">
+                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+  
+              <div class="works-slider">
+  
+                <div class="works-slider__item">
+                  <div class="works-slider__image">
+                    <img src="./img/works-img1.jpg" alt="" class="works-slider__img">
+                  </div>
+                  <div class="works-slider__desc">
+                    <h3 class="works-slider__title">Бортики “Зверушки”</h3>
+                    <p class="works-slider__text">Бортики игрушки, это красивые бортики в 
+                      виде животных. Бортики зверята — это отличный вариант красиво украсить 
+                      детскую кроватку малыша и обезопасить кроху от ушибов о реечки. 
+                      Многие мамочки стараются оригинально украсить кроватку малыша. 
+                      Оригинальные бортики животные это отличное решение для детской комнаты!
+                    </p>
+                    <a href="#" class="works-slider__button button">Заказать</a>
+                  </div>
+                </div>
+  
+                <div class="works-slider__item">
+                  <div class="works-slider__image">
+                    <!-- <img src="./img/works-img1.jpg" alt="" class="works-slider__img"> -->
+                  </div>
+                  <div class="works-slider__desc">
+                    <h3 class="works-slider__title">Бортики “Зверушки”</h3>
+                    <p class="works-slider__text">Бортики игрушки, это красивые бортики в 
+                      виде животных. Бортики зверята — это отличный вариант красиво украсить 
+                      детскую кроватку малыша и обезопасить кроху от ушибов о реечки. 
+                      Многие мамочки стараются оригинально украсить кроватку малыша. 
+                      Оригинальные бортики животные это отличное решение для детской комнаты!
+                    </p>
+                    <a href="#" class="works-slider__button button">Заказать</a>
+                  </div>
+                </div>
+
+                <div class="works-slider__item">
+                  <div class="works-slider__image">
+                    <!-- <img src="./img/works-img1.jpg" alt="" class="works-slider__img"> -->
+                  </div>
+                  <div class="works-slider__desc">
+                    <h3 class="works-slider__title">Бортики “Зверушки”</h3>
+                    <p class="works-slider__text">Бортики игрушки, это красивые бортики в 
+                      виде животных. Бортики зверята — это отличный вариант красиво украсить 
+                      детскую кроватку малыша и обезопасить кроху от ушибов о реечки. 
+                      Многие мамочки стараются оригинально украсить кроватку малыша. 
+                      Оригинальные бортики животные это отличное решение для детской комнаты!
+                    </p>
+                    <a href="#" class="works-slider__button button">Заказать</a>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <button class="slider-arrow slider-arrow__next">
+                <svg class="slider-arrow__icon">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+
           </div>
         </section>
         

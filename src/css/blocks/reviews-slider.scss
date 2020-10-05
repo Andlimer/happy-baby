@@ -1,0 +1,41 @@
+.reviews-slider {
+  position: relative;
+}
+
+.reviews-slider__item {
+  margin-right: 30px;
+  width: 370px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px #FFE0DD;
+  // временные
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & span {
+    font-weight: 800;
+    font-size: 200px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews-slider__prev,
+.reviews-slider__next {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.reviews-slider__prev {
+  left: -60px;
+}
+
+.reviews-slider__next {
+  right: -60px;
+}

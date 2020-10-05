@@ -1,22 +1,19 @@
-.slick-list {
-  margin-bottom: 50px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px #FFE0DD;
-}
-
-.slick-track{
-  display: flex;
-  align-items: flex-start;
-}
-
-.slick-dots{
+.slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.slick-dots li{
+
+.slick-dots li {
   margin-right: 15px;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
 }
 
 .slick-dots li.slick-active button {
@@ -24,11 +21,27 @@
   outline: none;
 }
 
-.slick-dots li button{
+.slick-dots li button {
   font-size: 0;
   width: 15px;
   height: 15px;
   background-color: #C4C4C4;
   border-radius: 50%;
   outline: none;
+}
+
+// Стрелки
+.slider-arrow {
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px #FFE0DD;
+  z-index: 10;
+}
+
+.slider-arrow__icon {
+  width: 6px;
+  height: 10px;
 }

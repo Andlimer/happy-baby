@@ -1,0 +1,68 @@
+.footer {
+  padding: 40px 0;
+  color: $sec-text;
+  background-color: $main-text;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__contacts,
+.footer__info,
+.footer__social {
+  width: 30%;
+}
+
+.footer__adres {
+  margin-bottom: 15px;
+}
+
+.footer__phone {
+  margin-bottom: 15px;
+  color: $sec-text;
+}
+
+.footer__phone svg {
+  fill: $sec-text;
+}
+
+.footer__email {
+  font-weight: 800;
+  text-decoration: none;
+  color: $sec-text;
+}
+
+.footer__info {
+  text-align: center;
+}
+
+.footer__copyright {
+  margin-bottom: 15px;
+}
+
+.footer__link-dev {
+  font-weight: 800;
+  text-decoration: none;
+  color: $sec-text;
+}
+
+.footer__social {
+  text-align: right;
+}
+
+.footer__link {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  fill: $sec-text;
+}

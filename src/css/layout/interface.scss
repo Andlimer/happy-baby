@@ -12,8 +12,16 @@ html, body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: rem(16px);
   color: $main-text;
+
+  @include laptop {
+    font-size: rem(15px);
+  }
+
+  @include tablet {
+    font-size: rem(14px);
+  }
 }
 
 ul {
@@ -48,7 +56,6 @@ table {
 
 .wrapper {
   overflow: hidden;
-  // min-width: 1200px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -59,27 +66,16 @@ table {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   width: 95%;
   margin: 0 auto;
 }
 
 .section {
-  padding: 70px 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 19px 43px;
-  font-weight: 700;
-  text-decoration: none;
-  background: linear-gradient(93.38deg, #FF4EB8 0%, #FD21A5 100%);
-  color: $sec-text;
-  box-shadow: 1px 1px 10px $main-color;
-  border-radius: 30px;
+  padding: rem(70px) 0;
 }
 
 .title {
-  font-size: 36px;
+  font-size: rem(36px);
   font-weight: 800;
 }

@@ -1,6 +1,10 @@
 .header {
-  padding: 20px 0;
+  padding: rem(20px) 0;
   background-color: #9BEDFF;
+
+  @include phone {
+    padding: rem(10px) 0;
+  }
 }
 
 .header__container {
@@ -15,7 +19,7 @@
 }
 
 .header__nav {
-  margin-right: 50px;
+  margin-right: rem(50px);
 }
 
 .header__phone {
@@ -28,5 +32,13 @@
     .phone__icon {
       fill: $main-color;
     }
+  }
+
+  @include laptop {
+    margin-right: rem(30px);
+  }
+
+  @include phone {
+    margin-right: rem(15px);
   }
 }

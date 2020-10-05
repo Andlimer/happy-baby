@@ -38,6 +38,9 @@
 }
 
 .step__icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   width: 70px;
   height: 70px;
 

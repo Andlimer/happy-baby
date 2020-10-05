@@ -1,8 +1,7 @@
 $(document).ready(function() {
-  $('.works-slider').slick({
-    prevArrow: $('.slider-arrow__prev'),
-    nextArrow: $('.slider-arrow__next'),
-    dots: true,
-    adaptiveHeight: true
+  $('.catalog-slider').slick({
+    prevArrow: $('.catalog-slider__prev'),
+    nextArrow: $('.catalog-slider__next'),
+    dots: true
   });
 });

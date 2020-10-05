@@ -4,11 +4,15 @@
 }
 
 .logo__img {
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 
 .logo__text {
-  width: 120px;
-  font-size: 18px;
+  width: rem(120px);
+  font-size: rem(18px);
   font-weight: 400;
+  
+  @include tablet {
+    display: none;
+  }
 }

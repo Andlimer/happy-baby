@@ -1,0 +1,30 @@
+.about {
+  margin-bottom: 70px;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.about__text {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.about__text p {
+  margin-bottom: 10px;
+  line-height: 140%;
+}
+
+.about__image {
+  width: 50%;
+  height: 600px;
+  background-color: #6c6c6c;
+  border-radius: 10px;
+  overflow: hidden;
+}

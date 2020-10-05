@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  padding: 19px 43px;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(93.38deg, #FF4EB8 0%, #FD21A5 100%);
+  color: $sec-text;
+  box-shadow: 1px 1px 10px $main-color;
+  border-radius: 30px;
+  transition: box-shadow .4s;
+
+  &:hover {
+    box-shadow: 1px 1px 20px $main-color;
+  }
+}

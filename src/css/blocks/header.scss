@@ -1,13 +1,12 @@
 .header {
-  padding: rem(20px) 0;
-  background-color: #9BEDFF;
+  padding-top: rem(20px);
 
   @include phone {
-    padding: rem(10px) 0;
+    padding-top: rem(10px);
   }
 }
 
-.header__container {
+.header__wrap {
   display: flex;
   justify-content: space-between;
 }

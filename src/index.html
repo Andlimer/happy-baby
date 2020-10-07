@@ -12,62 +12,65 @@
     <div class="wrapper">
       <div class="wrapper__content">
 
-        <header class="header">
-          <div class="header__container container">
-            <div class="header__left">
-              <div class="header__logo logo">
-                <img src="./img/logo.png" alt="Логотип" class="logo__img">
-                <span class="logo__text">Счастливый малыш</span>
-              </div>
-            </div>
-            <div class="header__right">
-              <nav class="header__nav nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="#" data-section="catalog" class="nav__link">Каталог</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Доставка</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Отзывы</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <a href="tel:+79146949325" class="header__phone phone">
-                <svg class="phone__icon">
-                  <use xlink:href="./img/sprite.svg#phone"></use>
-                </svg>
-                <span class="phone__number">+7 (914) 694-93-25</span>
-              </a>
-              <a href="#" class="burger-btn">
-                <span class="burger-btn__elem"></span>
-              </a>
-            </div>
-          </div>
-        </header>
-
         <section class="hero">
-          <div class="hero__container container">
-            <div class="hero__left">
-              <h1 class="hero__title">Создаем уют для ваших малышей</h1>
-              <ul class="hero__list">
-                <li class="hero__item">Более 100 расцветок ткани на Ваш выбор</li>
-                <li class="hero__item">Собственное производство во Владивостоке</li>
-                <li class="hero__item">Для любого типа кроваток, даже не стандартных</li>
-              </ul>
-              <a href="#" class="hero__button button">Заказать звонок</a>
-            </div>
-            <div class="hero__right">
+          <div class="container hero__container">
+            <header class="header">
+              <div class="header__wrap">
+                <div class="header__left">
+                  <div class="header__logo logo">
+                    <img src="./img/logo.png" alt="Логотип" class="logo__img">
+                    <span class="logo__text">Счастливый малыш</span>
+                  </div>
+                </div>
+                <div class="header__right">
+                  <nav class="header__nav nav">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="#" data-section="catalog" class="nav__link">Каталог</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" data-section="works" class="nav__link">Работы</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" data-section="about" class="nav__link">О нас</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" data-section="reviews" class="nav__link">Отзывы</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" data-section="contacts" class="nav__link">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <a href="tel:+79146949325" class="header__phone phone">
+                    <svg class="phone__icon">
+                      <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="phone__number">+7 (914) 694-93-25</span>
+                  </a>
+                  <a href="#" class="burger-btn">
+                    <span class="burger-btn__elem"></span>
+                  </a>
+                </div>
+              </div>
+            </header>
+
+            <div class="hero__wrap">
+              <div class="hero__block">
+                <h1 class="hero__title">Создаем уют для ваших малышей</h1>
+                <ul class="hero__list">
+                  <li class="hero__item">Более 100 расцветок ткани на Ваш выбор</li>
+                  <li class="hero__item">Собственное производство во Владивостоке</li>
+                  <li class="hero__item">Для любого типа кроваток, даже не стандартных</li>
+                </ul>
+                <a href="#" class="hero__button button">Заказать звонок</a>
+              </div>
               <img src="./img/hero-img.png" alt="Бортики в кроватку" class="hero__img">
             </div>
           </div>
         </section>
 
-        <section class="offer section">
+        <!-- <section class="offer section">
           <div class="container">
             <h2 class="offer__title title">Почему выбирают нашу продукцию</h2>
             <ul class="offer__list">
@@ -220,7 +223,7 @@
           </div>
         </section>
 
-        <section class="works section">
+        <section class="works section" id="works">
           <div class="container">
             <h2 class="works__title title">Наши работы</h2>
             <ul class="works__list">
@@ -240,7 +243,7 @@
           </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <h2 class="about__title title">О ателье "Счастливый малыш"</h2>
             <div class="about__wrap">
@@ -258,43 +261,58 @@
           </div>
         </section>
         
-        <section class="reviews section">
+        <section class="reviews section" id="reviews">
           <div class="container">
             <h2 class="reviews__title title">Отзывы наших клиентов</h2>
-            <div class="reviews-slider">
 
-              <button class="slider-arrow reviews-slider__prev">
-                <svg class="slider-arrow__icon">
-                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </button>
+            <div class="reviews-slider">
 
               <div class="reviews-slider__slider">
                 <div class="reviews-slider__item">
-                  <span>1</span> 
+                  <div class="reviews-slider__slide">
+                    <img src="./img/review-1.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
                 <div class="reviews-slider__item">
-                  <span>2</span> 
+                  <div class="reviews-slider__slide">
+                    <img src="./img/review-2.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
                 <div class="reviews-slider__item">
-                  <span>3</span> 
+                  <div class="reviews-slider__slide">
+                    <img src="./img/review-3.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
                 <div class="reviews-slider__item">
-                  <span>4</span> 
+                  <div class="reviews-slider__slide">
+                    <span>4</span>
+                  </div>
                 </div>
                 <div class="reviews-slider__item">
-                  <span>5</span> 
+                  <div class="reviews-slider__slide">
+                    <span>5</span>
+                  </div>
                 </div>
                 <div class="reviews-slider__item">
-                  <span>6</span> 
+                  <div class="reviews-slider__slide">
+                    <span>6</span>
+                  </div>
                 </div>
               </div>
 
-              <button class="slider-arrow reviews-slider__next">
-                <svg class="slider-arrow__icon">
-                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </button>
+              <div class="reviews-slider__controls">
+                <button class="slider-arrow reviews-slider__prev">
+                  <svg class="slider-arrow__icon">
+                    <use xlink:href="./img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <div class="reviews-slider__dots"></div>
+                <button class="slider-arrow reviews-slider__next">
+                  <svg class="slider-arrow__icon">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
 
             </div>
           </div>
@@ -338,7 +356,7 @@
           </div>
         </section>
 
-        <section class="form-section section">
+        <section class="form-section section" id="contacts">
           <div class="container">
             <h2 class="form-section__title title">Напишите нам</h2>
             <p class="form-section__subtitle">Письмо от клиента - это всегда счастье :)</p>
@@ -373,7 +391,7 @@
               </button>
             </form>
           </div>
-        </section>
+        </section> -->
 
       </div>
       <footer class="footer">

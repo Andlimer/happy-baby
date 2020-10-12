@@ -50,7 +50,7 @@ task('styles', () => {
     .pipe(dest(DIST_PATH))
     .pipe(gulpif(env === 'prod', gcmq()))
     .pipe(gulpif(env === 'prod', cleanCSS()))
-    .pipe(gulpif(env === 'prod', rename({extname: '.min.css'})))
+    // .pipe(gulpif(env === 'prod', rename({extname: '.min.css'})))
     .pipe(gulpif(env === 'dev',sourcemaps.write()))
     .pipe(dest(DIST_PATH))
     .pipe(reload({stream: true}));

@@ -1,28 +1,47 @@
 .footer {
-  padding: 40px 0;
+  padding: rem(40px) 0;
   color: $sec-text;
   background-color: $main-text;
 }
 
-.footer__container {
+.footer__wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include tablet-hd {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.footer__contacts,
-.footer__info,
-.footer__social {
-  width: 30%;
+.footer__left {
+  @include tablet-hd {
+    margin-bottom: rem(20px);
+  }
 }
 
 .footer__adres {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .footer__phone {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   color: $sec-text;
+  transition: color .4s;
+
+  &:hover {
+    color: $main-color;
+
+    .phone__icon {
+      fill: $main-color;
+    }
+  }
+
+  @include tablet-hd {
+    justify-content: center;
+  }
 }
 
 .footer__phone svg {
@@ -33,28 +52,27 @@
   font-weight: 800;
   text-decoration: none;
   color: $sec-text;
-}
+  transition: color 0.5s;
 
-.footer__info {
-  text-align: center;
-}
-
-.footer__copyright {
-  margin-bottom: 15px;
-}
-
-.footer__link-dev {
-  font-weight: 800;
-  text-decoration: none;
-  color: $sec-text;
+  &:hover {
+    color: $main-color;
+  }
 }
 
 .footer__social {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @include tablet-hd {
+    margin-bottom: rem(20px);
+  }
 }
 
 .footer__link {
-  margin-right: 15px;
+  width: rem(40px);
+  height: rem(40px);
+  margin-right: rem(15px);
 
   &:last-child {
     margin-right: 0;
@@ -62,7 +80,35 @@
 }
 
 .footer__icon {
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   fill: $sec-text;
+  transition: fill 0.5s;
+
+  &:hover {
+    fill: $main-color;
+  }
+}
+
+.footer__right {
+  text-align: right;
+
+  @include tablet-hd {
+    text-align: center;
+  }
+}
+
+.footer__copyright {
+  margin-bottom: rem(15px);
+}
+
+.footer__link-dev {
+  font-weight: 800;
+  text-decoration: none;
+  color: $sec-text;
+  transition: color 0.5s;
+
+  &:hover {
+    color: $main-color;
+  }
 }

@@ -1,30 +1,38 @@
 .works__title {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .works__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  height: 100%;
-}
+  margin-right: rem(-30px);
+  margin-bottom: rem(-30px);
 
-.works__col {
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  width: calc(100% / 3 - 30px);
+  @include tablet-hd {
+    margin-right: 0;
+  }
 }
 
 .works__item {
-  margin-bottom: 30px;
-  height: 280px;
+  margin-right: rem(30px);
+  width: calc(100% / 3 - 30px);
+  height: rem(370px);
+  margin-bottom: rem(30px);
   background-color: #6c6c6c;
-  border-radius: 10px;
+  border-radius: rem(10px);
   overflow: hidden;
-}
 
-.works__item_big {
-  height: 460px;
+  @include laptop {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @include tablet-hd {
+    width: 100%;
+    height: rem(500px);
+    margin-right: 0;
+  }
+
+  @include phone {
+    height: rem(450px);
+  }
 }

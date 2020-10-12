@@ -6,9 +6,9 @@
 }
 
 .phone__icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: rem(20px);
+  height: rem(20px);
+  margin-right: rem(10px);
   fill: $main-text;
   transition: fill .4s;
 }

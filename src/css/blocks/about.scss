@@ -1,30 +1,57 @@
 .about {
-  margin-bottom: 70px;
+  padding-bottom: rem(70px);
+
+  @include phone {
+    padding-bottom: rem(35px);
+  }
 }
 
 .about__title {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .about__wrap {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  @include tablet-hd {
+    flex-direction: column;
+  }
 }
 
 .about__text {
   width: 50%;
-  margin-right: 30px;
+
+  @include tablet-hd {
+    width: 100%;
+  }
 }
 
 .about__text p {
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
   line-height: 140%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .about__image {
   width: 50%;
-  height: 600px;
+  height: rem(600px);
+  margin-right: rem(30px);
   background-color: #6c6c6c;
-  border-radius: 10px;
+  border-radius: rem(10px);
   overflow: hidden;
+
+  @include tablet-hd {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: rem(30px);
+  }
+
+  @include phone {
+    height: rem(500px);
+  }
 }

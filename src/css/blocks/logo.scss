@@ -5,6 +5,11 @@
 
 .logo__img {
   margin-right: rem(20px);
+
+  @include tablet-hd {
+    margin-right: 0;
+    width: 50px;
+  }
 }
 
 .logo__text {

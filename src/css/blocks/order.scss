@@ -1,16 +1,38 @@
 .order__title {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .order__list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: rem(-30px);
+
+  @include desctop {
+    justify-content: start;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  @include phone {
+    margin-bottom: rem(-20px);
+  }
 }
 
 .order__item {
-  width: 340px;
+  width: rem(340px);
+  margin-right: rem(30px);
+  margin-bottom: rem(30px);
+
+  @include tablet-hd {
+    margin-right: 0;
+  }
+
+  @include phone {
+    margin-bottom: rem(20px);
+  }
 }
 
 .order__map {

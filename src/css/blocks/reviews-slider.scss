@@ -1,53 +1,34 @@
-.reviews-slider {
-  
-}
-
-.reviews-slider__item {
-  width: rem(400px);
-  height: rem(520px);
+.reviews-slider .slick-list {
+  margin-right: rem(-30px);
 }
 
 .reviews-slider__slide {
-  width: rem(370px);
-  height: rem(500px);
-  background-color: #fff;
-  border-radius: rem(10px);
-  overflow: hidden;
-  box-shadow: 0px 10px 10px #FFE0DD;
-  // Временные
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: rem(30px);
+}
 
-  & span {
-    font-weight: 800;
-    font-size: rem(200px);
-  }
+.reviews-slider__box-shadow {
+  margin: 0 5px 10px 5px;
+  border-radius: rem(10px);
+  box-shadow: 0px rem(10px) rem(10px) #FFE0DD;
+  overflow: hidden;
 }
 
 .reviews-slider__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  // max-width: rem(370px);
 }
 
 .reviews-slider__controls {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.reviews-slider__prev,
-.reviews-slider__next {
-  // position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
+  margin-top: rem(10px);
 }
 
 .reviews-slider__prev {
-  margin-right: 30px;
+  margin-right: rem(30px);
 }
 
 .reviews-slider__next {
-  margin-left: 30px;
+  margin-left: rem(30px);
 }

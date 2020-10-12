@@ -1,8 +1,27 @@
 .form-section {
+  position: relative;
   background-image: url('./img/form-section-bg.jpg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
+
+  @include laptop {
+    background: #ffffff;
+  }
+}
+
+.form-section__img {
+  display: none;
+  width: 100%;
+  margin-bottom: rem(50px);
+
+  @include laptop {
+    display: block;
+  }
+
+  @include phone {
+    margin-bottom: rem(35px);
+  }
 }
 
 .form-section__title {
@@ -12,27 +31,30 @@
 .form-section__subtitle {
   margin-bottom: rem(50px);
   font-size: rem(18px);
+
+  @include laptop {
+    text-align: center;
+  }
 }
 
 .form {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: rem(470px);
-  margin-bottom: -50px;
+
+  @include laptop {
+    width: 100%;
+  }
 }
 
 .form__input {
+  padding: 0;
   padding-bottom: rem(15px);
   margin-bottom: rem(50px);
   border: 0;
   border-bottom: 1px solid $main-text;
   outline: none;
   background-color: transparent;
-
-  &:focus {
-    border-bottom: 1px solid #FE37AE;
-  }
 }
 
 .form__textarea {
@@ -41,20 +63,9 @@
 }
 
 .form__button {
-  position: absolute;
-  top: 70px;
-  right: -100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
+  width: rem(200px);
 
-.form__btn-icon {
-  width: 19px;
-  height: 17px;
-  fill: $sec-text;
+  @include phone {
+    margin: 0 auto;
+  }
 }

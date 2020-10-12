@@ -7,10 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  margin-right: rem(30px);
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: rem(20px);
 
   &_green {
     background-color: #C3FFCD;
@@ -41,8 +41,8 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  width: 70px;
-  height: 70px;
+  width: rem(70px);
+  height: rem(70px);
 
   &_green {
     fill: #347C40;
@@ -74,7 +74,7 @@
 }
 
 .step__title {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: rem(10px);
+  font-size: rem(18px);
   font-weight: 800;
 }

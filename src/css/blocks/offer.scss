@@ -7,15 +7,40 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: rem(-50px);
+  margin-bottom: rem(-30px);
 
   @include desctop {
     justify-content: start;
+  }
+
+  @include laptop {
+    justify-content: space-around;
+  }
+
+  @include phone {
+    margin-bottom: rem(-20px);
   }
 }
 
 .offer__item {
   width: rem(350px);
   margin-right: rem(30px);
-  margin-bottom: rem(50px);
+  margin-bottom: rem(30px);
+
+  @include tablet-hd {
+    margin-right: 0;
+  }
+
+  @include phone {
+    margin-bottom: rem(20px);
+
+
+  }
+  
+}
+
+.offer__item:nth-child(even) {
+  @include laptop {
+    margin-right: 0;
+  }
 }

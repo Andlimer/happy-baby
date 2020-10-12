@@ -1,9 +1,18 @@
 .hero {
-  height: 100vh;
+  padding-bottom: rem(70px);
+  // height: 100vh;
+  min-height: rem(650px);
   background-color: #9BEDFF;
+
+  // @include phone {
+  //   padding-bottom: rem(45px);
+  // }
 }
 
 .hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -11,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 
   @include laptop {
     flex-direction: column-reverse;
@@ -20,8 +28,6 @@
 }
 
 .hero__block {
-  // width: 50%;
-
   @include laptop {
     text-align: center;
   }
@@ -30,6 +36,18 @@
 .hero__img {
   width: 50%;
   filter: drop-shadow(0px 10px 10px #68CBE1);
+
+  @include laptop {
+    margin-bottom: rem(20px);
+  }
+
+  @include tablet-hd {
+    width: 70%;
+  }
+
+  @include phone {
+    margin-bottom: rem(10px);
+  }
 }
 
 .hero__title {
@@ -38,17 +56,20 @@
   font-weight: 800;
 
   @include laptop {
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: rem(30px);
   }
 
   @include tablet {
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: rem(15px);
     font-size: rem(36px);
   }
 
-  @include phone {
-    font-size: rem(24px);
-  }
+  // @include phone {
+  //   font-size: rem(24px);
+  // }
 }
 
 .hero__list {
@@ -59,7 +80,7 @@
   }
 
   @include phone {
-    font-size: 12px;
+    font-size: rem(14px);
   }
 }
 

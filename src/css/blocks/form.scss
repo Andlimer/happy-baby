@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: rem(470px);
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.form__item {
+  margin-bottom: rem(30px);
+}
+
+.form__item.error {
+  color: red;
+}
+
+.form__label {
+	margin-bottom: rem(10px);
+	font-size: 18px;
+}
+
+.form__input {
+  width: 100%;
+  padding: rem(10px) rem(20px);
+  font-size: rem(18px);
+  border: 1px solid $main-text;
+	border-radius: rem(5px);
+}
+
+.form__input.error {
+  border-color: red;
+}
+
+.form__textarea {
+  height: rem(100px);
+  resize: none;
+}
+
+.form__button {
+  width: rem(200px);
+
+  @include phone {
+    margin: 0 auto;
+  }
+}

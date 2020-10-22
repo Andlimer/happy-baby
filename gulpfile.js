@@ -37,6 +37,13 @@ task('copy:html', () => {
     .pipe(reload({stream: true}));
 });
 
+// Копирование php файлов
+task('copy:php', () => {
+  return src(`${SRC_PATH}/*.php`)
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({stream: true}));
+});
+
 // Обработка стилей
 task('styles', () => {
   return src([...STYLES_LIBS, `${SRC_PATH}/css/main.scss`])
@@ -130,6 +137,7 @@ task('server', () => {
 
 task('watch', () => {
   watch(`./${SRC_PATH}/*.html`, series('copy:html'));
+  watch(`./${SRC_PATH}/*.php`, series('copy:php'));
   watch(`./${SRC_PATH}/css/**/*.scss`, series('styles'));
   watch(`./${SRC_PATH}/js/*.js`, series('scripts'));
   watch(`./${SRC_PATH}/img/**/*.{jpg,png,gif,webp}`, series('images'));
@@ -139,7 +147,7 @@ task('watch', () => {
 task(
   'default', 
   series('clean', 
-    parallel('copy:html', 'styles', 'scripts', 'fonts', 'images', 'icons'),
+    parallel('copy:html', 'copy:php', 'styles', 'scripts', 'fonts', 'images', 'icons'),
     parallel('watch', 'server')
   )
 );
@@ -147,6 +155,6 @@ task(
 task(
   'build', 
   series('clean', 
-    parallel('copy:html', 'styles', 'scripts', 'fonts', 'images', 'icons')
+    parallel('copy:html', 'copy:php', 'styles', 'scripts', 'fonts', 'images', 'icons')
   )
 );

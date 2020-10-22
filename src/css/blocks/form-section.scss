@@ -36,36 +36,3 @@
     text-align: center;
   }
 }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  width: rem(470px);
-
-  @include laptop {
-    width: 100%;
-  }
-}
-
-.form__input {
-  padding: 0;
-  padding-bottom: rem(15px);
-  margin-bottom: rem(50px);
-  border: 0;
-  border-bottom: 1px solid $main-text;
-  outline: none;
-  background-color: transparent;
-}
-
-.form__textarea {
-  height: rem(100px);
-  resize: none;
-}
-
-.form__button {
-  width: rem(200px);
-
-  @include phone {
-    margin: 0 auto;
-  }
-}

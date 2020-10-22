@@ -7,7 +7,7 @@
 }
 
 .reviews-slider__box-shadow {
-  margin: 0 5px 10px 5px;
+  margin: 0 rem(5px) rem(20px) rem(5px);
   border-radius: rem(10px);
   box-shadow: 0px rem(10px) rem(10px) #FFE0DD;
   overflow: hidden;
@@ -15,14 +15,12 @@
 
 .reviews-slider__img {
   width: 100%;
-  // max-width: rem(370px);
 }
 
 .reviews-slider__controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: rem(10px);
 }
 
 .reviews-slider__prev {

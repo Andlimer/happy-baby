@@ -292,15 +292,21 @@
                 </div>
 
                 <div class="reviews-slider__slide">
-                  <img src="./img/review-1.jpg" alt="" class="reviews-slider__img">
+                  <div class="reviews-slider__box-shadow">
+                    <img src="./img/review-1.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
 
                 <div class="reviews-slider__slide">
-                  <img src="./img/review-2.jpg" alt="" class="reviews-slider__img">
+                  <div class="reviews-slider__box-shadow">
+                    <img src="./img/review-2.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
 
                 <div class="reviews-slider__slide">
-                  <img src="./img/review-3.jpg" alt="" class="reviews-slider__img">
+                  <div class="reviews-slider__box-shadow">
+                    <img src="./img/review-3.jpg" alt="" class="reviews-slider__img">
+                  </div>
                 </div>
               </div>
 
@@ -365,31 +371,24 @@
           <div class="container">
             <h2 class="form-section__title title">Напишите нам</h2>
             <p class="form-section__subtitle">Письмо от клиента - это всегда счастье :)</p>
-            <form action="#" class="form">
-              <input 
-                type="text" 
-                name="name" 
-                class="form__input" 
-                placeholder="Введите имя"
-                required>
-              <input 
-                type="email" 
-                name="email" 
-                class="form__input" 
-                placeholder="Введите E-mail"
-                required>
-              <input 
-                type="tel" 
-                name="phone" 
-                class="form__input" 
-                placeholder="Введите телефон"
-                required>
-              <textarea 
-                name="comment" 
-                class="form__input form__textarea"
-                placeholder="Напишите сообщение" 
-                required></textarea>
-              <button type="submit" class="form__button button">Отправить</button>
+            <form class="form form-quest">
+              <div class="form__item">
+                <p class="form__label">Введите имя:*</p>
+                <input type="text" name="name" class="form__input" required>
+              </div>
+              <div class="form__item">
+                <p class="form__label">Введите E-mail:*</p>
+                <input type="email" name="email" class="form__input" required>
+              </div>
+              <div class="form__item">
+                <p class="form__label">Введите телефон:*</p>
+                <input type="tel" name="phone" class="form__input" required>
+              </div>
+              <div class="form__item">
+                <p class="form__label">Введите сообщение:</p>
+                <textarea name="quest" class="form__input form__textarea"></textarea>
+              </div>
+              <button type="submit" class="form-quest__btn form__button button">Отправить</button>
             </form>
           </div>
         </section>

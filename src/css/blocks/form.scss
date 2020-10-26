@@ -1,36 +1,17 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: rem(470px);
-
-  @include laptop {
-    width: 100%;
-  }
-}
-
-.form__item {
-  margin-bottom: rem(30px);
-}
-
-.form__item.error {
-  color: red;
-}
-
-.form__label {
-	margin-bottom: rem(10px);
-	font-size: 18px;
+  position: relative;
 }
 
 .form__input {
   width: 100%;
-  padding: rem(10px) rem(20px);
-  font-size: rem(18px);
-  border: 1px solid $main-text;
-	border-radius: rem(5px);
-}
-
-.form__input.error {
-  border-color: red;
+  padding-bottom: rem(10px);
+  margin-bottom: rem(50px);
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
 }
 
 .form__textarea {
@@ -44,4 +25,9 @@
   @include phone {
     margin: 0 auto;
   }
+}
+
+.form__message {
+  margin-top: rem(15px);
+  font-size: rem(18px);
 }

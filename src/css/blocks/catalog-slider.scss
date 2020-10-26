@@ -13,6 +13,10 @@
   @include tablet-hd {
     flex-direction: column;
   }
+
+  @include tablet {
+    padding: rem(30px) rem(20px);
+  }
 }
 
 .catalog-slider__image {

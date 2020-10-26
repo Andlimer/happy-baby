@@ -41,6 +41,18 @@
         smoothScroll(targetSectionPos, 500);
       }
     });
+
+    const menuMob = document.querySelector('.burger-menu__list');
+    
+    menuMob.addEventListener('click', (event) => {
+      const target = event.target;
+    
+      if (target.classList.contains('burger-menu__link')) {
+        const targetSection = document.querySelector(`#${target.dataset.section}`);
+        const targetSectionPos = targetSection.getBoundingClientRect().y;
+        smoothScroll(targetSectionPos, 500);
+      }
+    });
   }
   
   scroll();

@@ -33,10 +33,6 @@
       width: 90%;
     }
   }
-
-  & .popup-form__button {
-    margin-top: rem(20px);
-  }
 }
 
 .popup__content {
@@ -63,19 +59,12 @@
 }
 
 .popup-form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   min-width: rem(260px);
 }
 
 .popup-form__input {
-  width: 100%;
-  padding-bottom: rem(10px);
   margin-bottom: rem(30px);
-  border: none;
-  border-bottom: 1px solid #000;
-  border-radius: 0;
 }
 
 .popup-form__radio {
@@ -84,5 +73,5 @@
 }
 
 .popup-form__button {
-  width: rem(200px);
+  margin-top: rem(20px);
 }

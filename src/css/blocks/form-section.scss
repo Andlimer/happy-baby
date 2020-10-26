@@ -36,3 +36,11 @@
     text-align: center;
   }
 }
+
+.form-section__form {
+  width: rem(470px);
+
+  @include laptop {
+    width: 100%;
+  }
+}

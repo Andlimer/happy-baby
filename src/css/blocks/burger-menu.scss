@@ -31,3 +31,63 @@
     display: flex;
   }
 }
+
+.burger-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  transform: translateX(-100%);
+  transition: transform .5s;
+  z-index: 15;
+
+  &_active {
+    transform: translateX(0);
+  }
+}
+
+.burger-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: rem(30px);
+
+  &:last-child {
+    margin-bottom: rem(60px);
+  }
+}
+
+.burger-menu__link {
+  font-size: rem(24px);
+  font-weight: 700;
+  text-decoration: none;
+  color: $main-text;
+}
+
+.burger-menu__close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: rem(24px);
+  height: rem(24px);
+  padding: 0;
+}
+
+.burger-menu__icon {
+  width: 100%;
+  height: 100%;
+}

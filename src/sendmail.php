@@ -31,7 +31,7 @@
     $body.= '<p><strong>E-mail:</strong> '.$email.'</p>';
   }
   if(isset($catalog)) {
-    $body.= '<p><strong>'.$comment.'</strong></p>';
+    $body.= '<p><strong>'.$catalog.'</strong></p>';
   }
   if(isset($comment)) {
     $body.= '<p><strong>Сообщение:</strong> '.$comment.'</p>';

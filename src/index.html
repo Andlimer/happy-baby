@@ -11,51 +11,49 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__content">
-
+        <header class="header">
+          <div class="container header__container">
+            <div class="header__left">
+              <div class="header__logo logo">
+                <img src="./img/logo.png" alt="Логотип" class="logo__img">
+                <span class="logo__text">Счастливый малыш</span>
+              </div>
+            </div>
+            <div class="header__right">
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" data-section="catalog" class="nav__link">Каталог</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" data-section="works" class="nav__link">Работы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" data-section="about" class="nav__link">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" data-section="reviews" class="nav__link">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" data-section="contacts" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="tel:+79146949325" class="header__phone phone">
+                <svg class="phone__icon">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+                <span class="phone__number">+7 (914) 694-93-25</span>
+              </a>
+              <a href="#" class="burger-btn">
+                <span class="burger-btn__elem"></span>
+              </a>
+            </div>
+          </div>
+        </header>
         <section class="hero">
           <div class="container hero__container">
-            <header class="header">
-              <div class="header__wrap">
-                <div class="header__left">
-                  <div class="header__logo logo">
-                    <img src="./img/logo.png" alt="Логотип" class="logo__img">
-                    <span class="logo__text">Счастливый малыш</span>
-                  </div>
-                </div>
-                <div class="header__right">
-                  <nav class="header__nav nav">
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a href="#" data-section="catalog" class="nav__link">Каталог</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#" data-section="works" class="nav__link">Работы</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#" data-section="about" class="nav__link">О нас</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#" data-section="reviews" class="nav__link">Отзывы</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#" data-section="contacts" class="nav__link">Контакты</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <a href="tel:+79146949325" class="header__phone phone">
-                    <svg class="phone__icon">
-                      <use xlink:href="./img/sprite.svg#phone"></use>
-                    </svg>
-                    <span class="phone__number">+7 (914) 694-93-25</span>
-                  </a>
-                  <a href="#" class="burger-btn">
-                    <span class="burger-btn__elem"></span>
-                  </a>
-                </div>
-              </div>
-            </header>
-
-            <div class="hero__wrap">
+             <div class="hero__wrap">
               <div class="hero__block">
                 <h1 class="hero__title">Создаем уют для ваших малышей</h1>
                 <ul class="hero__list">
@@ -371,24 +369,12 @@
           <div class="container">
             <h2 class="form-section__title title">Напишите нам</h2>
             <p class="form-section__subtitle">Письмо от клиента - это всегда счастье :)</p>
-            <form class="form form-quest">
-              <div class="form__item">
-                <p class="form__label">Введите имя:*</p>
-                <input type="text" name="name" class="form__input" required>
-              </div>
-              <div class="form__item">
-                <p class="form__label">Введите E-mail:*</p>
-                <input type="email" name="email" class="form__input" required>
-              </div>
-              <div class="form__item">
-                <p class="form__label">Введите телефон:*</p>
-                <input type="tel" name="phone" class="form__input" required>
-              </div>
-              <div class="form__item">
-                <p class="form__label">Введите сообщение:</p>
-                <textarea name="quest" class="form__input form__textarea"></textarea>
-              </div>
-              <button type="submit" class="form-quest__btn form__button button">Отправить</button>
+            <form class="form form-section__form">
+              <input type="text" name="name" class="form__input" placeholder="Введите имя" required>
+              <input type="email" name="email" class="form__input" placeholder="Введите E-mail" required>
+              <input type="tel" name="phone" class="form__input" placeholder="Введите телефон" required>
+              <textarea name="quest" class="form__input form__textarea" placeholder="Введите сообщение"></textarea>
+              <button type="submit" class="form__button button">Отправить</button>
             </form>
           </div>
         </section>
@@ -442,10 +428,10 @@
             <use xlink:href="./img/sprite.svg#close"></use>
           </svg>
         </button>
-        <form action="#" class="popup-form">
-          <input type="text" name="name" class="popup-form__input" placeholder="Введите имя"required>
-          <input type="tel" name="phone" class="popup-form__input" placeholder="Введите телефон"required>
-          <button type="submit" class="popup-form__button button">Отправить</button>
+        <form class=" form popup-form">
+          <input type="text" name="name" class="popup-form__input form__input" placeholder="Введите имя"required>
+          <input type="tel" name="phone" class="popup-form__input form__input" placeholder="Введите телефон"required>
+          <button type="submit" class="form__button button">Отправить</button>
         </form>
       </div>
     </div>
@@ -457,11 +443,11 @@
             <use xlink:href="./img/sprite.svg#close"></use>
           </svg>
         </button>
-        <form action="#" class="popup-form">
-          <input type="text" name="name" class="popup-form__input" placeholder="Введите имя"required>
-          <input type="text" name="surname" class="popup-form__input" placeholder="Введите фамилию"required>
-          <input type="tel" name="phone" class="popup-form__input" placeholder="Введите телефон"required>
-          <input type="email" name="email" class="popup-form__input" placeholder="Введите E-mail"required>
+        <form class=" form popup-form">
+          <input type="text" name="name" class="popup-form__input form__input" placeholder="Введите имя"required>
+          <input type="text" name="surname" class="popup-form__input form__input" placeholder="Введите фамилию"required>
+          <input type="tel" name="phone" class="popup-form__input form__input" placeholder="Введите телефон"required>
+          <input type="email" name="email" class="popup-form__input form__input" placeholder="Введите E-mail"required>
           <label class="popup-form__radio radio">
             <input class="radio__input" type="radio" name="catalog" value="Индивидуальный пошив" checked>
             <span class="radio__icon"></span>
@@ -472,10 +458,61 @@
             <span class="radio__icon"></span>
             <span class="radio__text">Посмотреть асортимент</span>
           </label>
-          <button type="submit" class="popup-form__button button">Отправить</button>
+          <button type="submit" class="popup-form__button form__button button">Отправить</button>
         </form>
       </div>
     </div>
+
+    <div class="overlay">
+      <p class="overlay__message"></p>
+      <button class="overlay__close">
+        <svg class="overlay__icon">
+          <use xlink:href="./img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="burger-menu">
+      <button class="burger-menu__close">
+        <svg class="burger-menu__icon">
+          <use xlink:href="./img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a href="#" data-section="catalog" class="burger-menu__link">Каталог</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" data-section="works" class="burger-menu__link">Работы</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" data-section="about" class="burger-menu__link">О нас</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" data-section="reviews" class="burger-menu__link">Отзывы</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" data-section="contacts" class="burger-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="social">
+        <a href="https://wa.me/79146949325" class="social__link">
+          <svg class="social__icon">
+            <use xlink:href="./img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/bortiki_malisham_vdk/" class="social__link">
+          <svg class="social__icon">
+            <use xlink:href="./img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+        <a href="https://vk.com/happy_baby125" class="social__link">
+          <svg class="social__icon">
+            <use xlink:href="./img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+    </nav>
 
     <script src="script.js"></script>
   </body>
